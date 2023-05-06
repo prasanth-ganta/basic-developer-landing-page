@@ -1,0 +1,117 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+.headerContainer{
+    background-image: url(images/image1.avif);
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+    position: relative;
+}
+.txtContainer{
+    position:absolute;
+    width: 600px;
+    margin-top: 180px;
+    margin-left: 200px;
+    color:  rgb(254, 252, 247);
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 2px;
+    
+}
+.lgname{
+    font-size: 50px;
+    margin-left: 20px;
+    color: white;
+}
+.largeText{
+font-size: 80px;
+font-weight: normal;
+}
+.blackBox{
+    background-color: rgb(18, 17, 17);
+    padding: 50px;
+    font-family: 'Archivo', sans-serif;
+}
+.blackBox h1{
+    color: white;
+    align-items: center;
+    margin-left:160px;
+    font-size: 60px;
+}
+.blackBox span{
+    font-size: 80px;
+    margin-left: 25px;
+}
+.card{
+    margin: 50px;
+}
+.work{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(330px,1fr)); 
+      
+}
+.card{
+    width: 330px;
+    height: 450px;
+    margin: 25px;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 3px 5px 5px slategrey;
+    transition: 0.3s ease-in-out;
+}
+.card:hover{
+    transform: scale(1.04);
+    box-shadow: 3px 5px 5px rgb(71, 76, 80);
+    transition: 0.3s ease-in-out;
+}
+.items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cardContent{
+    margin-left: 5px;
+    text-align: justify;
+}
+.bottom{
+    display: flex;
+}
+.about{
+    background: rgb(98, 143, 98);
+    color: white;
+}
+.contact{
+    background: #ad5353;
+    color: white;
+}
+.about,.contact{
+    padding: 20px;   
+}
+.about h1,.contact h1{
+    text-align: justify;
+    font-size: 60px;
+}
+.contact h1,p,.about h1,p{
+    padding: 5px;
+}
+footer{
+    text-align: center;
+    background: black;
+    color: white;
+    font-size: 40px;
+    padding: 40px;
+}
+@media(max-width:786px){
+    .txtContainer{
+        width: 300px;
+        justify-content: center;
+    }
+}
